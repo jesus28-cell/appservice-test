@@ -1,0 +1,7 @@
+- name: Checkout code
+  uses: actions/checkout@v2
+  with:
+    submodules: 'recursive'
+    ref: 'main'
+  env:
+    NODE_VERSION: 16.x # Add this line to specify Node.js version 16
